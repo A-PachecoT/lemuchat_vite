@@ -6,38 +6,66 @@ This project is a web-based AI chat application using FastAPI and LangChain for 
 
 ```
 project/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
 ├── backend/
-│ ├── app/
-│ │ ├── init.py
-│ │ ├── main.py
-│ │ ├── api/
-│ │ │ ├── init.py
-│ │ │ └── chat.py
-│ │ ├── core/
-│ │ │ ├── init.py
-│ │ │ └── config.py
-│ │ └── services/
-│ │ ├── init.py
-│ │ └── chatbot.py
-│ ├── requirements.txt
-│ └── .env
-└── frontend/
-├── src/
-│ ├── app/
-│ │ ├── components/
-│ │ │ └── chat/
-│ │ │ ├── chat.component.ts
-│ │ │ ├── chat.component.html
-│ │ │ └── chat.component.css
-│ │ ├── services/
-│ │ │ └── chat.service.ts
-│ │ ├── app.component.ts
-│ │ ├── app.component.html
-│ │ └── app.module.ts
-│ ├── index.html
-│ └── styles.css
-├── angular.json
-└── package.json
+├── frontend/
+└── scripts/
+```
+
+**Scripts**
+
+```
+📦scripts
+ ┣ 📜deploy.sh
+ ┗ 📜setup.sh
+```
+
+**Backend**
+
+```
+📦backend
+ ┣ 📂app
+ ┃ ┣ 📂api
+ ┃ ┃ ┣ 📜chat.py
+ ┃ ┃ ┗ 📜__init__.py
+ ┃ ┣ 📂core
+ ┃ ┃ ┣ 📜config.py
+ ┃ ┃ ┗ 📜__init__.py
+ ┃ ┣ 📂services
+ ┃ ┃ ┣ 📜chatbot.py
+ ┃ ┃ ┗ 📜__init__.py
+ ┃ ┣ 📜main.py
+ ┃ ┗ 📜__init__.py
+ ┣ 📜.env
+ ┗ 📜requirements.txt
+```
+
+**Frontend**
+
+```
+📦frontend
+ ┣ 📂node_modules
+ ┣ 📂public
+ ┃ ┗ 📜vite.svg
+ ┣ 📂src
+ ┃ ┣ 📂assets
+ ┃ ┃ ┗ 📜react.svg
+ ┃ ┣ 📂components
+ ┃ ┃ ┗ 📂Chat
+ ┃ ┃ ┃ ┗ 📜Chat.tsx
+ ┃ ┣ 📂services
+ ┃ ┃ ┗ 📜chatService.ts
+ ┃ ┣ 📜App.css
+ ┃ ┣ 📜App.tsx
+ ┃ ┣ 📜index.css
+ ┃ ┣ 📜main.tsx
+ ┃ ┗ 📜vite-env.d.ts
+ ┣ 📜.gitignore
+ ┣ 📜index.html
+ ┣ 📜README.md
+
 ```
 
 ## Backend (FastAPI + LangChain)

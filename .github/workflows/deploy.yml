@@ -43,3 +43,5 @@ jobs:
           # Add your deployment steps here
           # For example, you might use a service like Heroku, AWS, or DigitalOcean
           # Make sure to use the OPENAI_API_KEY environment variable in your deployment
+    # USE VERCEL CLI TO DEPLOY FRONTEND
+    # USE DOCKER TO DEPLOY BACKEND
